@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <title>Tambah Data</title>
+</head>
+<body>
+
+    <p></p>
+    <h3>Tambah Buku</h3>
+    <form action="/kambing" method="post" enctype="multipart/form-data">
+        <div class="group-input">
+            <label>ID Kambing</label>
+            <input type="text" name="id">
+        </div>
+        <div class="group-input">
+            <label>Nama Kambing</label>
+            <input type="text" name="nama">
+        </div>
+        <div class="group-input">
+            <label>harga</label>
+            <input type="text" name="harga">
+        </div>
+        <div class="group-input">
+            <label>Keterangan</label>
+            <input type="text" name="keterangan">
+        </div>
+        <div class="group-input">
+            <label>password</label>
+            <input type="text" name="password">
+        </div>
+        <div class="group-input">
+            <label>Gambar</label>
+            <input type="file" name="image" id="img">
+        </div>
+        <button type="submit" value="submit">Tambah</button>
+        <a href="/kambing">Kembali</a>
+    </form>
+</body>
+</html>

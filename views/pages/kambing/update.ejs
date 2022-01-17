@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <title>Tambah Data</title>
+</head>
+<body>
+
+    <p></p>
+    <h3>Tambah Buku</h3>
+    <form method="post" action="/kambing/update" enctype="multipart/form-data">
+        <div class="group-input">
+            <label>ID Kambing database</label>
+            <input type="text" name="_id" readonly
+            value='<%= kambing._id %>'>
+        </div>
+          <div class="group-input">
+            <label>ID Kambing</label>
+            <input type="text" name="id" required
+            value='<%= kambing.id %>'>
+        </div>
+        <div class="group-input">
+            <label>Nama Kambing</label>
+            <input type="text" name="nama" id="nama" required
+            value='<%= kambing.nama %>'>
+        </div>
+        <div class="group-input">
+            <label>harga</label>
+            <input type="text" name="harga" id="harga"required
+            value='<%= kambing.harga %>'>
+        </div>
+        <div class="group-input">
+            <label>Keterangan</label>
+            <input type="text" name="keterangan" id="keterangan" required
+            value='<%= kambing.keterangan %>'>
+        </div>
+        <div class="group-input">
+            <label>password</label>
+            <input type="text" name="password" id="password"required
+            value='<%= kambing.password %>'>
+        </div>
+        <div class="group-input">
+            <label>Gambar</label>
+            <input type="file" name="image" id="image">
+        </div>
+        <button type="submit"  value="Submit">update</button>
+        <a href="/kambing">Kembali</a>
+    </form>
+</body>
+</html>

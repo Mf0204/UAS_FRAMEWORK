@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+
+    <title>Detail kambing</title>
+    <link rel="stylesheet" href="/asset/style.css">
+</head>
+<body>
+    <%- include ('../components/navbar') %>
+    <a href="/kambing">kembali</a>
+    <!-- <h3>detail kambing</h3>
+    <ul>
+        <li>Nama: <strong><%= kambing.nama %></strong></li>
+        <li>Harga: <strong><%= kambing.harga %></strong></li>
+        <li>Keterangan: <strong><%= kambing.keterangan %></strong></li>
+    </ul> -->
+
+    <div class="container">
+		<div class="card">
+			<div class="container-fliud">
+				<div class="wrapper row">
+					<div class="preview col-md-6">
+						
+						<div class="col-md-4">
+							<img class="img-fluid"
+								src="data:image/<%=kambing.img.contentType%>;base64,<%=kambing.img.data.toString('base64')%>"
+								alt="image-produk">
+						</div>	
+					</div>
+					<div class="details col-md-6">
+						<h3 class="product-title"><%= kambing.nama %></h3>
+						<div class="rating">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<span class="review-no"><%= kambing.keterangan %></span>
+						</div>
+						<h5 class="product-description">Deskripsi</h5>
+                        <p >Usia : 2 Tahun</p>
+                        <p>Kondisi : Sehat (dilengkapi sertifikat dari lembaga kesehatan kambing)</p>
+						<h4 class="price">Harga: <span><%= kambing.harga %></span></h4>
+						<p class="vote"><strong>91% Puas</strong> dari total keseluruhan pembeli</p>
+						<div class="action">
+							<button class="add-to-cart btn btn-default" type="button">Beli</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
